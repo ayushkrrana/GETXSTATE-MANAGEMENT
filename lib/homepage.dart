@@ -22,7 +22,7 @@ class Homepage extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  Get.snackbar(
+                  Get.snackbar(//snack bar is used to provide error messages when some things is missing or when we want to provide error messages to the home screen
                     "Downloading is Completed",
                     "Your Song is Downloaded",
                     borderColor: Colors.red,
@@ -34,7 +34,7 @@ class Homepage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Get.defaultDialog(
+                  Get.defaultDialog(// it provide a pop up message message like a alert when we do some thing or when we want to commit something finally so it is used for that exceptional cases where some important and final things goes done
                     // by this we can easily create the dialogue box
                     title: "ALERT",
                     content: Column(
@@ -51,7 +51,7 @@ class Homepage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Get.to( //to is used to navigate to another page
+                  Get.to( //to is used to navigate to another page and get x is easy than old school like navigator.push()
                     AboutPage(),
                   ); // through this we can easily navigate to the next page(if we write get.off all then we do not move back to previous page
                 },
