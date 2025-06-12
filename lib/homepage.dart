@@ -11,9 +11,7 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppController appController = Get.put(   //.put is used to put the controller
-      AppController(),
-    ); // we have to write the class name in which we extend the GetxController, it is dependency injection
+    AppController appController = Get.put(AppController()); // we have to write the class name in which we extend the GetxController, it is dependency injection, we create the instance of the class to access the properties of the class,et.put() registers the instance in GetX's dependency system
     return Scaffold(
       body: SafeArea(
         child: Center(
